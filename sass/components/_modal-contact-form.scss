@@ -1,4 +1,4 @@
-.modal-form-text {
+.contact-form__text {
     @include font($fs: 20px, $lh: 23px);
     letter-spacing: 0.03em;
 
@@ -10,7 +10,7 @@
     flex-direction: column;
 }
 
-.contact-form-input {
+.contact-form__input {
     width: 100%;
     height: 40px;
 
@@ -25,15 +25,15 @@
 }
 }
 
-.contact-form-field {
+.contact-form__field {
     margin-bottom: 10px;
 }
 
-.contact-form-field-comment {
+.contact-form__field__comment {
     margin-bottom: 20px;
 }
 
-.contact-form-field-key {
+.contact-form__field__key {
     display: block;
 
     margin-bottom: 4px;
@@ -43,26 +43,26 @@
     color: var(--secondary-text-color);
 }
 
-.contact-form-input-wrapper {
+.contact-form__wrapper {
     position: relative;
     display: block;
 
 }
 
-.contact-form-icon {
+.contact-form__icon {
     position: absolute;
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
     transition: fill 250ms var(--cubic-bezier);
 
-    .contact-form-input:focus+&{
+    .contact-form__input:focus+&{
         fill: var(--accent-color);
     }
 }
 
 
-.contact-form-comment {
+.contact-form__comment {
     display: block;
     width: 100%;
     height: 120px;
@@ -86,7 +86,10 @@
     }
 }
 
-.contact-form-checkbox-label {
+.contact-form__checkbox{
+    @extend %visually-hidden;
+}
+.contact-form__checkbox__label {
     @extend %align;
 
     margin-bottom: 30px;
@@ -103,7 +106,7 @@
         cursor: pointer;
         margin-right: 10px;
 
-        .contact-form-checkbox:checked+& {
+        .contact-form__checkbox:checked+& {
             background-position: center;
             background-size: contain;
             background-color: var(--accent-color);
@@ -111,23 +114,23 @@
             background-image: url("../images/checkbox-icon/chekbox-icon.svg");
         }
 
-        .contact-form-checkbox:focus+& {
+        .contact-form__checkbox:focus+& {
             border-color: var(--accent-color);                
         }
     }
 }
 
-.checkbox-label-text {
+.checkbox__text {
     @include font($fw: 400, $lh: 24px);
     letter-spacing: 0.03em;
 
     color: var(--secondary-text-color);
 }
 
-.modal-form-link {
+.contact-form__link {
     color: var(--accent-color);
 }
 
-.contact-form-button {
+.contact-form__button {
     align-self: center;
 }

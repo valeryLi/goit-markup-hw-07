@@ -1,15 +1,15 @@
-.project-btn-list {
+.project__btn {
     display: flex;
     justify-content: center;
 
     margin-bottom: 50px;
 }
 
-.project-list-item:not(:last-child) {
+.project__item:not(:last-child) {
     margin-right: 8px;
 }
 
-.project-modal-btn {
+.project__modal-btn {
     border: solid 1px transparent;
     border-radius: 4px;
     padding: 6px 22px;
@@ -33,12 +33,12 @@
     }
 }
 
-.project-cards-list {
+.project__cards {
     display: flex;
     flex-wrap: wrap;
 }
 
-.cards-list-item {
+.project__cards__item {
     flex-basis: calc((100% - 60px) / 3);
 
     &:not(:nth-child(3n)) {
@@ -50,7 +50,7 @@
     } 
 }
 
-.project-cards-content-wrapper {
+.project__cards__wrapper {
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
     border-top: none;
@@ -58,7 +58,7 @@
     background-color: var(--auxiliary-light-color);
 }
 
-.project-cards-link {
+.project__cards__link {
     display: block;
 
     transition: box-shadow 250ms var(--cubic-bezier);
@@ -70,7 +70,7 @@
     }
 }
 
-.project-title {
+.project__cards__title {
     margin-bottom: 4px;
 
     @include font($fs: 18px, $lh: 36px);
@@ -79,19 +79,19 @@
     color: var(--auxiliary-dark-color);
 }
 
-.project-text {
+.project__cards__text {
     @include font(400, 16px, 30px);
     letter-spacing: 0.03em;
 
     color: var(--secondary-text-color);
 }
 
-.project-img-wrapper {
+.project__img__wrapper {
     position: relative;
     overflow: hidden;
 }
 
-.project-cards-list-overlay {
+.project__cards__overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -110,8 +110,8 @@
 
     transform: translateY(100%);
 
-    .project-cards-link:hover &,
-    .project-cards-link:focus & {
+    .project__cards__link:hover &,
+    .project__cards__link:focus & {
         transform: translateY(0%);
     }
 }

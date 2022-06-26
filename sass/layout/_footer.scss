@@ -1,4 +1,4 @@
-.footer-container {
+.footer__container {
     display: flex;
     align-items: baseline;
 }
@@ -10,22 +10,22 @@
     background-color: var(--background-dark-color);
 }
 
-.left-side {
+.footer__left-side {
     flex-grow: 1;
     margin-right: 70px;
 }
 
-.right-side {
+.footer__right-side {
     margin-right: 93px;
 }
 
-.contact-list {
+.footer__contacts {
     @include font($fw: 400, $lh: 24px);
     letter-spacing: 0.03em; 
     font-style: normal;
 }
 
-.contact-list-link {
+.footer__link {
     transition: color 250ms var(--cubic-bezier);
 
     &:hover,
@@ -34,20 +34,20 @@
     }
 }
 
-.map {
+.footer__link__map {
     color: var(--auxiliary-light-color);
 }
 
-.connection {
+.footer__link_connection {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.contact-list-item:not(:last-child) {
+.footer__item:not(:last-child) {
     margin-bottom: 9px;
 }
 
-.footer-title,
-.subscribe-title {
+.footer__title,
+.subscribe-form__title {
     @include font();
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -56,11 +56,11 @@
     color: var(--auxiliary-light-color);
 }
 
-.footer-social-link {
+.footer__social-link {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-social-list-icon {
+.footer__social-icon {
     fill: var(--auxiliary-light-color);
 }
 
