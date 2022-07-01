@@ -25,13 +25,13 @@
     margin-bottom: 30px ;
  } */
 
-.employees__name {
+.employees__title {
     @include font(500, 16px, 19px);
     letter-spacing: 0.03em;
     margin-bottom: 10px;
 }
 
-.employees__position {
+.employees__text {
     margin-bottom: 16px;
 
     @include font(400, 16px, 19px);
